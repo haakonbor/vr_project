@@ -24,6 +24,30 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	UPROPERTY(VisibleAnywhere)
-	UStaticMeshComponent* MeshComponent;
+	USceneComponent* RootScene;
+
+	UPROPERTY(VisibleAnywhere)
+	UStaticMeshComponent* GearMesh1;
+	UPROPERTY(VisibleAnywhere)
+	UStaticMeshComponent* HookMesh1;
+	UPROPERTY(VisibleAnywhere)
+	UStaticMeshComponent* AnchorMesh1;
+
+	UPROPERTY(VisibleAnywhere)
+	UStaticMeshComponent* GearMesh2;
+	UPROPERTY(VisibleAnywhere)
+	UStaticMeshComponent* HookMesh2;
+	UPROPERTY(VisibleAnywhere)
+	UStaticMeshComponent* AnchorMesh2;
+
+	UPROPERTY(VisibleAnywhere)
+	UStaticMeshComponent* GearMesh3;
+	UPROPERTY(VisibleAnywhere)
+	UStaticMeshComponent* HookMesh3;
+	UPROPERTY(VisibleAnywhere)
+	UStaticMeshComponent* AnchorMesh3;
+
+	UPROPERTY(EditAnywhere)
+	float RotationSpeed = 50.0f;
 	
 };
